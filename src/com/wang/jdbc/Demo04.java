@@ -46,6 +46,10 @@ public class Demo04 {
 				if(prestat != null) {
 					prestat.close();
 				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			try {
 				if(connection != null) {
 					connection.close();
 				}

@@ -48,9 +48,17 @@ public class Demo03 {
 				if(resultset != null) {
 					resultset.close();
 				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			try {
 				if(prestat != null) {
 					prestat.close();
 				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			try {
 				if(connection != null) {
 					connection.close();
 				}
